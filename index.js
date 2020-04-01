@@ -20,27 +20,27 @@ function readFolder(fileArr, folderName) {
         if (testArr.length === 1) {
 
             tempFolderName = `${folderName}/${file}`;
-            const newFolderArr = fs.readdirSync(`${tempFolderName}`);
-            readFolder(newFolderArr, `${tempFolderName}/${newFolderArr}`);
+            const newFolderContentArr = fs.readdirSync(tempFolderName);
+            readFolder(newFolderContentArr, `${tempFolderName}/${newFolderContentArr}`);
             return;
         }
 
         if (testArr[testArr.length - 1] === 'jpg' || testArr[testArr.length - 1] === 'png') {
-            console.log(`We have a path to the image: ${folderName}`)
+            console.log(`We have a path to the image: ${folderName}`);
             return;
         }
 
 
         if (testArr[testArr.length - 1] === 'json') {
 
-            var jsdonBuffer = fs.readFileSync(`${folderName}`);
-            var jsonFile = JSON.parse(jsdonBuffer);
+            var jsonBuffer = fs.readFileSync(`${folderName}`);
+            var jsonFile = JSON.parse(jsonBuffer);
             var keyArray = Object.keys(jsonFile.gallery);
             keyArray.forEach(item => {
 
                 images = jsonFile.gallery[item];
 
-                images.forEach(image => console.log(image.url))
+                images.forEach(image => console.log(image.url));
             })
             return;
         }
