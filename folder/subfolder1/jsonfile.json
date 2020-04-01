@@ -1,0 +1,60 @@
+{
+    "gallery": {
+        "podno": [{
+                "url": "../../images/podno-1.JPG"
+            },
+            {
+                "url": "../../images/podno-2.JPG"
+            },
+            {
+                "url": "../../images/podno-3.JPG"
+            }
+        ],
+        "certifikat": [{
+                "url": "../../images/certifikat-1.JPG"
+            },
+            {
+                "url": "../../images/certifikat-2.JPG"
+            },
+            {
+                "url": "../../images/certifikat-3.JPG"
+            }
+        ],
+        "sanitarije": [{
+                "url": "./../images/sanitarije-1.JPG"
+            },
+            {
+                "url": "../../images/sanitarije-2.JPG"
+            },
+            {
+                "url": "../../images/sanitarije-3.JPG"
+            }
+        ],
+        "parking": [{
+                "url": "../../images/parking-1.JPG"
+            },
+            {
+                "url": "../../images/parking-2.JPG"
+            },
+            {
+                "url": "../../images/parking-3.JPG"
+            },
+            {
+                "url": "../../images/parking-4.JPG"
+            }
+        ],
+        "tlocrt": [{
+                "url": "../../images/tlocrt/1.jpg"
+            },
+            {
+                "url": "../../images/tlocrt/2.jpg"
+            },
+            {
+                "url": "../../images/tlocrt/3.jpg"
+            },
+            {
+                "url": "../../images/tlocrt/4.jpg"
+            }
+        ]
+    }
+}
